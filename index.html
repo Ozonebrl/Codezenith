@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Code Zenith</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#jobs">Job Opportunities</a></li> <!-- Added Job Opportunities -->
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Code Zenith</h1>
+            <p>Your trusted partner in IT solutions, services, and courses.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>We provide modern, responsive web development services to bring your ideas to life.</p>
+            </div>
+            <div class="service">
+                <h3>IT Support</h3>
+                <p>Expert IT support services for small and medium-sized businesses.</p>
+            </div>
+            <div class="service">
+                <h3>Software Solutions</h3>
+                <p>Custom software solutions tailored to meet your specific business needs.</p>
+            </div>
+            <div class="service">
+                <h3>IT Trainings</h3>
+                <p>Different IT training services to keep up with the technology updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+            <div class="course">
+                <h3>Full Stack Development</h3>
+                <p>Master full stack development with our hands-on course.</p>
+                <a href="#" class="btn">Buy Course</a> <!-- Added Buy Course Button -->
+            </div>
+            <div class="course">
+                <h3>Data Science</h3>
+                <p>Get certified in Data Science and Machine Learning.</p>
+                <a href="#" class="btn">Buy Course</a> <!-- Added Buy Course Button -->
+            </div>
+            <div class="course">
+                <h3>Cybersecurity</h3>
+                <p>Protect organizations with our comprehensive cybersecurity courses.</p>
+                <a href="#" class="btn">Buy Course</a> <!-- Added Buy Course Button -->
+            </div>
+            <div class="course">
+                <h3>Introduction to Web Design (Figma)</h3>
+                <p>Learn the basics of UI/UX design and wireframing with Figma.</p>
+                <a href="#" class="btn">Buy Course</a> <!-- Added Buy Course Button -->
+            </div>
+            <div class="course">
+                <h3>Computer Basics (Word, Excel, Basics)</h3>
+                <p>Master essential computer skills with a focus on Microsoft Word, Excel, and basic operations.</p>
+                <a href="#" class="btn">Buy Course</a> <!-- Added Buy Course Button -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Opportunities Section -->
+    <section class="jobs" id="jobs">
+        <h2>Job Opportunities</h2>
+        <div class="job-grid">
+            <div class="job">
+                <h3>Front-End Developer</h3>
+                <p>We are looking for an experienced front-end developer proficient in HTML, CSS, and JavaScript.</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+            <div class="job">
+                <h3>Back-End Developer</h3>
+                <p>Join our team as a back-end developer skilled in Node.js, Python, and databases.</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+            <div class="job">
+                <h3>Web Designer</h3>
+                <p>We need a creative web designer with experience in UI/UX and Figma.</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+            <div class="job">
+                <h3>Graphics Designer</h3>
+                <p>We are hiring a graphics designer with proficiency in Adobe Suite (Photoshop, Illustrator).</p>
+                <a href="#" class="btn">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Code Zenith is a leading provider of IT solutions and training. We have been delivering innovative technology services for over a decade. Our mission is to empower businesses and individuals with cutting-edge technology and skills to thrive in today's digital world.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Phone number (optional)">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>We have received your message!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
