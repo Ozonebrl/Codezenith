@@ -138,6 +138,47 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Job Opportunities Grid */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 2rem; /* Space between each job */
+    margin-top: 2rem;
+}
+
+.job {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.job h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.job p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.job .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #4db8ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job .btn:hover {
+    background-color: #1a73e8;
+}
+
+/* Contact Form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -166,40 +207,6 @@ section {
     background-color: #1a73e8;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .service-grid, .course-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #1a1a1a;
-        flex-direction: column;
-        width: 200px;
-        padding-top: 1rem;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-}
 /* Popup Modal Styles */
 .popup {
     display: none;
@@ -236,4 +243,39 @@ section {
 
 .close:hover {
     color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-grid, .course-grid, .job-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        width: 200px;
+        padding-top: 1rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 }
